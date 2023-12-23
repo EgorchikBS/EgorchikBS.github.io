@@ -225,7 +225,7 @@ body {
     flex-direction: column;
 }
 
-.card__container{
+.card__container {
     display: flex;
     flex-direction: column;
 }
@@ -289,40 +289,98 @@ body {
     border: 1px solid #6B6B8A;
 }
 
-.products-block__header{
+.products-block__header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
 }
+
 .products-block__title {
     color: #2C2D35;
 
-font-family: Raleway;
-font-size: 40px;
-font-style: normal;
-font-weight: 500;
-line-height: 110%; }
-
-.products-block__tab{
-padding: 10px 20px;
-align-items: flex-start;
-border-radius: 20px;
-background:#D7D7D7;
-padding: 30 px;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
 }
-.products-block__tab.active{
+
+.products-block__tab {
     padding: 10px 20px;
-align-items: flex-start;
-border-radius: 20px;
-background:#6B6B8A;
-padding: auto;
+    align-items: flex-start;
+    border-radius: 20px;
+    background: #D7D7D7;
+
 }
 
-.products-block__tabs{
+.products-block__tab.active {
+    color: #F4F6F5;
+    background: #6B6B8A;
+
+}
+
+.products-block__tabs {
+    gap: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.seo {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: url(../images/fon.png);
+}
+
+.seo__title {
+    width: 421px;
+    color: #F4F6F5;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 40px */
+}
+
+.seo__background {
+    width: 1440px;
+    height: 574px;
+    flex-shrink: 0;
+
+}
+
+.seo__text {
+    width: 540px;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 27px */
+}
+
+.seo__icon {
+    width: 80px;
+    height: 80px;
+    stroke-width: 3px;
+    stroke: #6B6B8A;
+}
+.seo__button{
+    display: inline-flex;
+height: 65px;
+padding: 20px 60px;
+justify-content: center;
+align-items: center;
+gap: 6px;
+flex-shrink: 0;
+background: #6B6B8A;
+}
+.seo__head{
+    display: flex;
+    gap: 20px;
 }
