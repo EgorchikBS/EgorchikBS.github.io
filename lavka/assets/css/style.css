@@ -471,12 +471,17 @@ align-items: flex-start;
 gap: 30px;
 }
 
-.footer_wrapper{
+
+.footer{
+    background: #E1EDE6;
+    padding-top: 20px;
+}
+.footer__wrapper{
     width: 1440px;
 height: 168px;
 flex-shrink: 0;
-background: #E1EDE6;
-
+display: flex;
+gap: 20px;
 }
 
 .footer_logo{
@@ -485,6 +490,21 @@ height: 35px;
 align-items: center;
 gap: 8px;
 flex-shrink: 0;
-margin-left: 165px;
 margin-top: 30px;
 }
+.footer_cat{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer_cat-name{
+    color: #2C2D35;
+}
+.footer_phone{
+    margin-top: 30px;
+    display: flex;
+}
+.footer_cut{
+
+}
+
