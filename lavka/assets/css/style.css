@@ -56,6 +56,7 @@ body {
 /* СТАНДАРТНЫЕ НАСТРОЙКИ */
 
 /* НАСТРОЙКИ ШАПКИ */
+
 #header {
     background: #E1EDE6;
     position: relative;
@@ -215,6 +216,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 }
+@media (max-width:1200px) {
+    .products-block__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 .products-block__card {
     /* width: 350px; */
@@ -315,6 +321,13 @@ margin-top: 87px;
     align-items: flex-start;
     border-radius: 20px;
     background: #D7D7D7;
+
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -496,15 +509,35 @@ margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-left: 60px;
 }
 .footer_cat-name{
-    color: #2C2D35;
+    color: #2C2D35;;
 }
 .footer_phone{
     margin-top: 30px;
     display: flex;
 }
-.footer_cut{
-
+.footer_menu{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -115px;
+    
+ 
 }
-
+.footer_socials{
+    display: flex;
+    margin-left: 500px;
+    margin-top: -80px;
+    gap: 20px
+}
+.footer_names{
+display: flex;
+margin-left: 500px;
+flex-direction: column;
+margin-top: 10px;
+gap: 5px;
+    
+}
