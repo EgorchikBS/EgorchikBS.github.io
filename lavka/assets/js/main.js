@@ -22,3 +22,26 @@ btnRight.addEventListener("click", function(){
     }
 });
 
+const tooggleContentByTab =() => {
+    let tabs = document.querySelectorAll('.products-block__tab');
+    let contents = document.querySelectorAll('.products-block__wrapper');
+    //console.log (tabs) ;
+    console.log (contents); 
+    tabs.forEach((tab,index) => {
+        console.log(tab);
+        tab.addEventListener('click' , () =>{
+            console.log('test click');
+            tabs.forEach(tab_2=> {
+                tab_2.classList.remove('active');
+             tab.classList.add('active');
+            })
+            contents.forEach((content) =>{
+                content.classList.remove('active');
+            }
+        )
+        tab.classList.add('active');
+        contents[index].classList.add('active');
+ })
+    })
+}
+tooggleContentByTab();
