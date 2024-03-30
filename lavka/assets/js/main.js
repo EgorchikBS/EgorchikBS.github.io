@@ -45,3 +45,28 @@ const tooggleContentByTab =() => {
     })
 }
 tooggleContentByTab();
+
+//mobile menu
+var burger = document.querySelector('.burger');
+var mobileMenu = document.querySelector('.mobile-menu');
+burger.addEventListener('click',()=>{
+
+    console.log(burger);
+    console.log(mobileMenu);
+  //  if(burger.classList.contains('active')){
+    //    burger.classList.remove('active');
+      //  mobileMenu.classList.remove('active');
+   // }
+    //else
+        //burger.classList.add('active')
+        //mobileMenu.classList.add('active');
+    
+//});
+burger.classList.toggle('active');
+mobileMenu.classList.toggle('active');
+});
+
+cross.addEventListener('click',()=>{
+    burger.classList.remove('active');
+    mobileMenu.classList.remove('active');
+});
