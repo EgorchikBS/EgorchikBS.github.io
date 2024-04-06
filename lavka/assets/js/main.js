@@ -1,26 +1,5 @@
 
-let btnLeft = document.querySelector("#mainbanner .btn-left");
-let btnRight = document.querySelector("#mainbanner .btn-right");
 
-console.log(btnLeft);
-console.log(btnRight);
-
-btnLeft.addEventListener("click", function(){
-    if(btnLeft.classList.contains("anime")){
-        btnLeft.classList.remove("anime");
-    }
-    else{
-        btnLeft.classList.add("anime");
-    }
-});
-btnRight.addEventListener("click", function(){
-    if(btnRight.classList.contains("anime")){
-        btnRight.classList.remove("anime");
-    }
-    else{
-        btnRight.classList.add("anime");
-    }
-});
 
 const tooggleContentByTab =() => {
     let tabs = document.querySelectorAll('.products-block__tab');
@@ -49,7 +28,10 @@ tooggleContentByTab();
 //mobile menu
 var burger = document.querySelector('.burger');
 var mobileMenu = document.querySelector('.mobile-menu');
+var crest = document.querySelector('.crest');
+
 burger.addEventListener('click',()=>{
+    
 
     console.log(burger);
     console.log(mobileMenu);
@@ -62,11 +44,35 @@ burger.addEventListener('click',()=>{
         //mobileMenu.classList.add('active');
     
 //});
+
 burger.classList.toggle('active');
 mobileMenu.classList.toggle('active');
 });
 
-cross.addEventListener('click',()=>{
+crest.addEventListener('click',()=>{
     burger.classList.remove('active');
     mobileMenu.classList.remove('active');
 });
+
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.btn-right',
+      prevEl: '.btn-left',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
