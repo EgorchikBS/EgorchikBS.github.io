@@ -76,3 +76,37 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+  //korzina
+  var korzina = document.querySelector('.korzina');
+var korzinaMenu = document.querySelector('.korzinaMenu');
+var crest = document.querySelector('.crest');
+
+korzina.addEventListener('click',()=>{
+    
+
+  console.log(korzina);
+  console.log(korzinaMenu);
+
+  korzina.classList.toggle('active');
+korzinaMenu.classList.toggle('active');
+});
+
+var products = document.querySelectorAll('.card__button')
+products.forEach((product)=>{
+product.addEventListener('click',()=>{
+  console.log(product.parentElement.querySelector('.card__title'));
+  console.log(product.parentElement.querySelector('.card__price'));
+  
+  let title = product.parentElement.querySelector('.card__title').innerHTML;
+  let price = product.parentElement.querySelector('.card__price').innerHTML;
+  
+  let products_area = document.querySelector('.korzinaProducts');
+
+  let div = document.createElement('div');
+  div.className = "product-info";
+  div.innerHTML = `<span class='product-title'>${title}</span> <span class='product-price'>${price}</span>`;
+  products_area.append(div);
+})  
+
+})
