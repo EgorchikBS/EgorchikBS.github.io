@@ -91,6 +91,10 @@ korzina.addEventListener('click',()=>{
   korzina.classList.toggle('active');
 korzinaMenu.classList.toggle('active');
 });
+crest2.addEventListener('click',()=>{
+  korzina.classList.remove('active');
+  korzinaMenu.classList.remove('active');
+});
 
 var products = document.querySelectorAll('.card__button')
 products.forEach((product)=>{

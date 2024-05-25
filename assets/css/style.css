@@ -655,3 +655,10 @@ gap: 5px;
 .korzinaMenu.active{
     transform: none;
 }
+.crest2{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    right: 15px;
+}
